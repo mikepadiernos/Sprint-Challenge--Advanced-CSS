@@ -1,1 +1,24 @@
 // Mixins Here
+.if() {
+  display: flex;
+
+}
+.h() {
+  flex-shrink: 0;
+  display: none;
+}
+.btn-const() {
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 9rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.button(@bg-color,@color) {
+  background-color: @bg-color;
+  color: @color;
+  .btn-const();
+}
+.border(@br) {
+  border-radius: @br;
+}

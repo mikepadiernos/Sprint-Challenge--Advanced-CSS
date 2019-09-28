@@ -1,1 +1,37 @@
 // Navigation code here
+nav {
+  &.site-nav {
+    background-color: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+    .if();
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    .site-branding {
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      a {
+        text-decoration: none;
+        h1 {
+          font-family: @nav-font;
+          font-size: 4rem;
+          text-decoration: none;
+        }
+      }
+    }
+    .nav-menu {
+      .if();
+      justify-content: center;
+      li {
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 15px;
+        a {
+          text-decoration: none;
+          color: @nav-font;
+        }
+      }
+    }
+  }
+}
