@@ -162,11 +162,13 @@ p {
 }
 nav.site-nav {
   background-color: #F6F6F6;
+  opacity: 0.9;
   border-bottom: 2px solid #F1F1F1;
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: auto;
 }
 nav.site-nav .site-branding {
   width: 100%;
@@ -203,6 +205,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 120px;
 }
 .home .intro .header-img {
   border-radius: 5px;
@@ -268,6 +273,10 @@ footer {
   width: 9rem;
   text-align: center;
   font-size: 1.5rem;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: lightblue;
+  color: #ffffff;
 }
 .home .walk .walk-img {
   width: 46%;
